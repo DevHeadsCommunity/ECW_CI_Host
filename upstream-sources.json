@@ -1,0 +1,22 @@
+{
+  "repository": "https://github.com/DevHeadsCommunity/ECW_CI_Github_Actions_Templates",
+  "revision": "327b344818615992cdbc012f3a8762b095ee6fd6",
+  "source_files": {
+    ".github/scripts/configure_hil.py": "1fef06ab3b310b54d7433429b023196ea5f72b594c1caba4a83d48427efb663a",
+    ".github/scripts/create_jobs.py": "e9b0977957cf16b0d6844216eb23e51d65ad7a97b6ce5cb75f0ff490662c3cf4",
+    ".github/scripts/download_artifacts.py": "ffcc4e6cc9e60cd56fb18f16e1d1ccec4207935ba928983097912759e9cf9c5e",
+    ".github/scripts/ecw_client.py": "fe002e1f090c9d0396032057d9619c856cac81a0a2b3d0191446d404f6d385d3",
+    ".github/scripts/find_or_create_booking.py": "dede0a6670ca0e714971aaf128fc6f0f2a37f65c1f19af09be1c76823826a0e1",
+    ".github/scripts/flash_firmware.py": "3c630e73899e7da5ff365f9c611ec922227547b47925edc4ab4a8968f0c9df9d",
+    ".github/scripts/hil_csv.py": "e6cd18ab64db3d8dd7923b781ea3633a0f38f09bd5803ea0c391e034518171a3",
+    ".github/scripts/hil_profiles/adxl345.json": "57d35ed862abee8c5507c44fd11e762b4f75d4d00df5d5a8aa191949d3e94656",
+    ".github/scripts/hil_profiles/bme280.json": "d82615451ff1adb9a69afc9f1678d90bccae5c59785801403cdb657cb244c342",
+    ".github/scripts/hil_profiles/mcp3565r.json": "3d5e27920fd2971214dbe5bcac6ffbfb72d6449b5577f3b5cdee1a4dd7a03dbe",
+    ".github/scripts/hil_profiles/pmod_mic3.json": "205ad7eb844ee267d754bdf84e916c93b94e50c219c96f41def7ec9722cce60a",
+    ".github/scripts/poll_jobs.py": "64701387f72394a538a0b1a6f1f596db5cc2a988c750d1cd3a7af0205de3c426",
+    ".github/scripts/select_board.py": "6e49499c38c5656ae720814c485f9f5b11f801eeb469416ccab1934bf03636ff",
+    ".github/scripts/upload_and_flash.py": "a23a33d81a622e566c2df879312e6f6467cdebbc4d74cb2f2c9f53dd3b09a34a",
+    ".github/scripts/upload_firmware.py": "feb2d119f62c20a50a2674c25b653ed48c6c4915284c0ccc526914dd89c058a1",
+    ".github/scripts/wait_for_booking.py": "6e1028341ec3024184948bdd4705658839162c94bb5ae2a5a0b7b209c68dcdf5"
+  }
+}

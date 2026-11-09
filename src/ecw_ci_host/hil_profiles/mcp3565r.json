@@ -1,0 +1,27 @@
+{
+  "id": "mcp3565r",
+  "label": "MCP3565R",
+  "match": "\\bmcp[\\s_-]?356[45]r?\\b",
+  "channels": [
+    {
+      "id": "voltage",
+      "label": "Voltage",
+      "unit": "V",
+      "min": -2.4,
+      "max": 2.4,
+      "decimals": 6,
+      "csvHeader": "voltage_v",
+      "headerAliases": [
+        "volt",
+        "vin",
+        "voltage"
+      ],
+      "encoding": {
+        "format": "int32",
+        "fullScale": 2.4,
+        "offset": 0,
+        "saturate": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620" role="img" aria-labelledby="title description">
+  <title id="title">ECW CI Host architecture</title>
+  <desc id="description">GitHub Actions, Jenkins, and local Python invoke the same portable host. It books a board, optionally prepares HIL, uploads then explicitly flashes firmware, runs ECW jobs, collects evidence, and releases its booking. The ECW backend and Resource Manager own physical board access.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9" fill="#57d8be"/></marker>
+    <style>
+      text{font-family:Arial,sans-serif;fill:#ecf3ff} .small{font-size:15px;fill:#b7c8df}
+      .box{fill:#172841;stroke:#3f5e82;stroke-width:1.5} .link{stroke:#57d8be;stroke-width:2;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1120" height="620" rx="20" fill="#0a1526"/>
+  <text x="40" y="52" font-size="30" font-weight="bold">ECW CI Host</text>
+  <text x="40" y="82" class="small">One Python API and CLI · any runner · booked hardware managed by ECW</text>
+  <rect x="40" y="120" width="260" height="66" rx="12" class="box"/>
+  <text x="64" y="160" font-size="19">GitHub Actions</text>
+  <rect x="40" y="208" width="260" height="66" rx="12" class="box"/>
+  <text x="64" y="248" font-size="19">Jenkins / other CI</text>
+  <rect x="40" y="296" width="260" height="66" rx="12" class="box"/>
+  <text x="64" y="336" font-size="19">Terminal / Python</text>
+  <path d="M300 153H335V242H370M300 241H370M300 329H335V242" class="link"/>
+  <rect x="370" y="120" width="330" height="242" rx="16" fill="#143b3c" stroke="#57d8be" stroke-width="2"/>
+  <text x="396" y="158" font-size="22" font-weight="bold">ecw-ci run</text>
+  <text x="396" y="187" class="small">edgebench-hil run / run_test()</text>
+  <text x="396" y="225" font-size="17">1. Book and wait for activation</text>
+  <text x="396" y="252" font-size="17">2. Optional HIL CSV setup</text>
+  <text x="396" y="279" font-size="17">3. Upload → explicit flash</text>
+  <text x="396" y="306" font-size="17">4. Test → verify → collect</text>
+  <text x="396" y="333" font-size="17">5. Release owned booking</text>
+  <path d="M700 242H760" class="link"/>
+  <text x="710" y="223" class="small">HTTPS</text>
+  <rect x="760" y="120" width="320" height="104" rx="14" class="box"/>
+  <text x="786" y="160" font-size="22">ECW backend</text>
+  <text x="786" y="190" class="small">Bookings · storage · job API</text>
+  <path d="M920 224V253" class="link"/>
+  <rect x="760" y="254" width="320" height="78" rx="14" class="box"/>
+  <text x="786" y="300" font-size="22">Resource Manager</text>
+  <path d="M920 332V369" class="link"/>
+  <rect x="760" y="370" width="320" height="102" rx="14" class="box"/>
+  <text x="786" y="409" font-size="21">Booked Arduino / MCU</text>
+  <text x="786" y="440" class="small">Flash · UART · optional HIL/camera</text>
+  <path d="M760 421H535V383" class="link"/>
+  <text x="380" y="425" class="small">Results, logs, ZIP evidence</text>
+  <rect x="40" y="494" width="1040" height="86" rx="14" fill="#111f34"/>
+  <text x="64" y="528" font-size="18">Project inputs: firmware + JSON jobs + optional physical-value CSV</text>
+  <text x="64" y="556" class="small">The host has no local USB dependency. Upload stores files; a separate request flashes the booked board.</text>
+</svg>

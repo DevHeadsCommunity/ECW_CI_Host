@@ -1,0 +1,6 @@
+recursive-include examples *.toml *.json *.csv *.ino *.sh
+recursive-include docs *.md *.svg *.docx
+include tools/build_user_guide.py
+global-exclude __pycache__ *.py[cod]
+include UPSTREAM.md
+include upstream-sources.json

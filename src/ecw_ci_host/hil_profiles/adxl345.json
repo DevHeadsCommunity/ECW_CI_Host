@@ -1,0 +1,67 @@
+{
+  "id": "adxl345",
+  "label": "ADXL345",
+  "match": "\\badxl[\\s_-]?345\\b",
+  "channels": [
+    {
+      "id": "x",
+      "label": "X",
+      "unit": "g",
+      "min": -2,
+      "max": 2,
+      "decimals": 3,
+      "csvHeader": "x_g",
+      "headerAliases": [
+        "x",
+        "accx",
+        "xg",
+        "xaxis"
+      ],
+      "encoding": {
+        "format": "int16",
+        "scale": 256,
+        "offset": 0
+      }
+    },
+    {
+      "id": "y",
+      "label": "Y",
+      "unit": "g",
+      "min": -2,
+      "max": 2,
+      "decimals": 3,
+      "csvHeader": "y_g",
+      "headerAliases": [
+        "y",
+        "accy",
+        "yg",
+        "yaxis"
+      ],
+      "encoding": {
+        "format": "int16",
+        "scale": 256,
+        "offset": 0
+      }
+    },
+    {
+      "id": "z",
+      "label": "Z",
+      "unit": "g",
+      "min": -2,
+      "max": 2,
+      "decimals": 3,
+      "csvHeader": "z_g",
+      "headerAliases": [
+        "z",
+        "accz",
+        "zg",
+        "zaxis"
+      ],
+      "encoding": {
+        "format": "int16",
+        "scale": 256,
+        "offset": 0
+      }
+    }
+  ]
+}

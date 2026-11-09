@@ -1,0 +1,9 @@
+{
+  "name": "Optional camera capture",
+  "duration_seconds": 15,
+  "commands": [
+    {"id": "camera", "name": "Capture the booked board", "command": "camera.screenshot", "attempts": 1,
+     "timeout_ms": 5000, "parameters": {"filename": "board.jpg"}}
+  ],
+  "checks": [{"type": "jpeg", "file": "board.jpg"}]
+}

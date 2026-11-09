@@ -1,0 +1,27 @@
+{
+  "id": "pmod_mic3",
+  "label": "Pmod MIC3",
+  "match": "\\b(?:pmod[\\s_-]?)?mic3\\b",
+  "channels": [
+    {
+      "id": "voltage",
+      "label": "Voltage",
+      "unit": "V",
+      "min": -2.4,
+      "max": 2.4,
+      "decimals": 6,
+      "csvHeader": "voltage_v",
+      "headerAliases": [
+        "volt",
+        "vin",
+        "voltage"
+      ],
+      "encoding": {
+        "format": "int32",
+        "fullScale": 2.4,
+        "offset": 0,
+        "saturate": true
+      }
+    }
+  ]
+}

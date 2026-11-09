@@ -1,0 +1,22 @@
+{
+  "name": "Arduino LED-on and serial heartbeat",
+  "duration_seconds": 30,
+  "commands": [
+    {
+      "id": "serial",
+      "name": "Capture five seconds of Arduino output",
+      "command": "mcu.serial_log",
+      "attempts": 1,
+      "timeout_ms": 5000,
+      "parameters": {"filename": "arduino.log"}
+    }
+  ],
+  "checks": [
+    {
+      "type": "serial_sequence",
+      "file": "arduino.log",
+      "pattern": "ECW_CI_HOST_SAMPLE (?P<sample>\\d+) LED=ON",
+      "minimum": 4
+    }
+  ]
+}

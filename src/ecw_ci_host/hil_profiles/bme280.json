@@ -1,0 +1,58 @@
+{
+  "id": "bme280",
+  "label": "BME280",
+  "match": "\\bbme[\\s_-]?280\\b",
+  "channels": [
+    {
+      "id": "temperature",
+      "label": "Temperature",
+      "unit": "°C",
+      "min": -40,
+      "max": 85,
+      "decimals": 2,
+      "csvHeader": "temperature_c",
+      "headerAliases": [
+        "temp"
+      ],
+      "encoding": {
+        "format": "uint16",
+        "scale": 256,
+        "offset": 40
+      }
+    },
+    {
+      "id": "humidity",
+      "label": "Humidity",
+      "unit": "%RH",
+      "min": 0,
+      "max": 100,
+      "decimals": 2,
+      "csvHeader": "humidity_pct",
+      "headerAliases": [
+        "hum"
+      ],
+      "encoding": {
+        "format": "uint16",
+        "scale": 256,
+        "offset": 0
+      }
+    },
+    {
+      "id": "pressure",
+      "label": "Pressure",
+      "unit": "hPa",
+      "min": 300,
+      "max": 1100,
+      "decimals": 2,
+      "csvHeader": "pressure_hpa",
+      "headerAliases": [
+        "press"
+      ],
+      "encoding": {
+        "format": "uint16",
+        "scale": 16,
+        "offset": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ecw-ci-host"
+version = "0.1.0"
+description = "Portable EdgeBench hardware automation for Python, terminals, and CI runners"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Mohamed Taher MASROUKI", email = "mohamedtahermasrouki@gmail.com"}]
+dependencies = []
+
+[project.scripts]
+ecw-ci = "ecw_ci_host.cli:main"
+edgebench-hil = "ecw_ci_host.cli:main"
+
+[project.urls]
+Repository = "https://github.com/DevHeadsCommunity/ECW_CI_Host"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ecw_ci_host = ["hil_profiles/*.json"]

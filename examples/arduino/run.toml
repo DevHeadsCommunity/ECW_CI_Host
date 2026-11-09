@@ -1,0 +1,13 @@
+board = "Arduino UNO R4 WiFi"
+backend_url = "https://plovdiv.edgebench.io/api"
+firmware = "../../build/arduino_ci_bench.ino.bin"
+jobs_dir = "jobs"
+output_dir = "../../artifacts"
+booking_timeout = 900
+job_timeout = 120
+poll_interval = 2
+minimum_remaining = 360
+
+[metadata]
+project = "ECW_CI_Host"
+bench = "arduino_uno_r4_wifi"
